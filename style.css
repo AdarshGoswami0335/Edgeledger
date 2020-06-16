@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #fff;
+    color: #333;
+    line-height: 1.6;
+    font-family: Open Sans, sans-serif;
+}
+h1,h2{
+    font-weight: 300;
+    line-height: 1.2;
+}
+p{
+    margin: 10px 0px;
+}
+ul{
+    list-style: none;
+}
+a{
+    color: #333;
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+}
+/*Navbar*/
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    width: 100%;
+    background-color: #333;
+    opacity: 0.8;
+    color: #fff;
+    position: fixed;
+    top: 0;
+}
+.navbar ul{
+    display: flex;
+}
+.navbar a{
+    color: #fff;
+    padding: 0 20px;
+    margin: 0 5px;
+}
+.navbar a:hover{
+    border-bottom: #28a745 2px solid;
+}
+.navbar.logo{
+    font-weight: 400;
+    margin-left:20px ;
+}
+/* Mai content*/
+
+.hero{
+    height: 100vh;
+    background: url(./showcase.jpg) no-repeat center center/cover;
+    position:relative;
+    color: #fff;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+.content h1{
+    font-size: 55px;
+}
+.content p{
+    font-size: 23px;
+    max-width:600px;
+    margin:20 0 30px;
+}
+.hero::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background:rgba(0,0,0,0.6)
+}
+.hero *{
+    z-index: 10;
+}
+   /*Icons*/
+.icons{
+    padding: 30px;
+}
+.icons h3{
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.icons i{
+    background-color: #28a745;
+    color: #fff;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    padding: 16px;
+}
+.cases img:hover{
+       opacity: 0.8;
+}
+@media(max-width:768px){
+   .navbar{
+       flex-direction: column;
+       height: 120px;
+        padding: 20px;
+   }
+   
+   .navbar ul li a{
+    padding: 10px 10px;
+    margin: 0 3px;
+   }
+    
+    .flex-items{
+        flex-direction: column;
+        margin: 0 3px;
+    }
+    .flex-columns .column{
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+    .team img {
+        width: 70%;
+    }
+    .no{
+        display: none;
+    }
+    .me{
+        flex-basis: 100%;
+        width: 100%;
+    }
+    .flex-columns .column{
+        flex-basis:100% ;
+        max-width: 100%;
+    }
+    .hatao{
+        display: none;
+    }
+
+}
+.hero.blog1{
+    background-image: url('./blog1.jpg');
+    height: 40vh;
+}
+.hero.blog2{
+    background-image: url('./blog2.jpg');
+    height: 40vh;
+}
+.hero.blog3{
+    background-image: url('./blog3.jpg');
+    height: 40vh;
+}
+
